@@ -1,1 +1,17 @@
 npm i save bootstrap@3  // install localy in this project
+
+ng g c
+
+string interpolation {{}}
+property binding []
+event binding ()
+Two-Way-Binding
+Important: For Two-Way-Binding (covered in the next lecture) to work, you need to enable the ngModel  directive. This is done by adding the FormsModule  to the imports[]  array in the AppModule.
+You then also need to add the import from @angular/forms  in the app.module.ts file:
+import { FormsModule } from '@angular/forms';
+
+____  Directives  ________
+Directives are instructions in the DOM
+Structural directives: *ngIf, *ngFor,
+Attribute directives: *ngStyle
+
