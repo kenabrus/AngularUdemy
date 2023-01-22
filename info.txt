@@ -1,1 +1,31 @@
 npm i save bootstrap@3  // install localy in this project
+
+ng g c
+
+string interpolation {{}}   <p>{{userName}}</p>
+property binding [] <button type="button" [attr.aria-label]="actionName">{{actionName}} with Aria</button>
+event binding ()  (click)="doSamething()"
+Two-Way-Binding [()]  [(size)]="fontSizePx"
+Important: For Two-Way-Binding (covered in the next lecture) to work, you need to enable the ngModel  directive. This is done by adding the FormsModule  to the imports[]  array in the AppModule.
+You then also need to add the import from @angular/forms  in the app.module.ts file:
+import { FormsModule } from '@angular/forms';
+
+____  Directives  ________
+Directives are instructions in the DOM
+
+Structural directives:
+*ngIf   <p *ngIf="serverStatus; else noServer">Serwer was created with name {{serverName}}</p>
+        <ng-template #noServer>
+          <p>No server was created</p>
+        </ng-template>
+*ngFor   *ngFor="let server of servers"
+
+Attribute directives:
+[ngStyle] = "{backgroundColor : 'red'}"  [ngStyle] = "{'background-color' : 'red'}"
+<some-element [ngStyle]="{'font-style': styleExp}">...</some-element>
+
+[ngClass]="{online: getServerStatus() === 'online'}"
+ <some-element [ngClass]="{'first': true, 'second': true, 'third': false}">...</some-element>
+
+
+
