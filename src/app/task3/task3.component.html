@@ -2,7 +2,7 @@
   <div class="row-xs-12">
     <button class="btn btn-primary" (click)="displayDetails()">Display details</button>
     <p
-    *ngFor="let password of passwordsArray, index as i"
+    *ngFor="let password of passwordsArray, let i = index"
     [ngStyle]="{'background-color': i >= 4 ? 'blue' : 'red'}"
     [ngClass]="{'white-text': i >=4 }">
       {{i}}) Secret password = {{password}}
