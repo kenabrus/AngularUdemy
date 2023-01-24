@@ -19,6 +19,12 @@ import { ShoppingEditComponent } from './_components/shopping-list/shopping-edit
 import { RecipeListComponent } from './_components/recipes/recipe-list/recipe-list.component';
 import { RecipeItemComponent } from './_components/recipes/recipe-list/recipe-item/recipe-item.component';
 import { RecipesComponent } from './_components/recipes/recipes.component';
+import { ServerElementComponent } from './section5/server-element/server-element.component';
+import { ServerFormComponent } from './section5/server-form/server-form.component';
+import { ServerListComponent } from './section5/server-list/server-list.component';
+import { AddUserFormComponent } from './user/add-user-form/add-user-form.component';
+import { UsersListComponent } from './user/users-list/users-list.component';
+import { UserElementComponent } from './user/user-element/user-element.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +43,13 @@ import { RecipesComponent } from './_components/recipes/recipes.component';
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    RecipesComponent
+    RecipesComponent,
+    ServerElementComponent,
+    ServerFormComponent,
+    ServerListComponent,
+    AddUserFormComponent,
+    UsersListComponent,
+    UserElementComponent
   ],
   imports: [
     BrowserModule,

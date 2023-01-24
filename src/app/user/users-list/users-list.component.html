@@ -1,0 +1,6 @@
+<div class="container container-fluid">
+  <app-add-user-form (userCreated)="onUserAdded($event)"></app-add-user-form>
+  <br/>
+  <app-user-element *ngFor="let usr of users" [user]="usr"></app-user-element>
+</div>
+

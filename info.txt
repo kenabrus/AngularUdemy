@@ -29,6 +29,8 @@ Attribute directives:
 
  _____________ section 3 _____________
 
+ Property & Event Binding
+
 ng g c _components/recipes --skip-tests=true
 ng g c _components/recipes/recipe-list --skip-tests=true
 ng g c _components/recipes/recipe-list/recipe-item --skip-tests=true
@@ -36,6 +38,16 @@ ng g c _components/recipes/recipe-detail --skip-tests=true
 ng g c _components/recipes/recipe-item --skip-tests=true
 ng g c _components/shopping-list --skip-tests=true
 ng g c _components/shopping-list/shopping-edit --skip-tests=true
+
+________ Section 5 - Components & Databinding Deep Dive _____________
+
+HTML Elements                 Directives              Components
+Native Properties             Custom Properties       Custom Properties
+& Events                      & Events                & Events
+
+from server-form to server-list
+from server-list to server-element
+display server-element in server-list
 
 
 
