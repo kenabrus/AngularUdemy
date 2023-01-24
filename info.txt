@@ -27,5 +27,15 @@ Attribute directives:
 [ngClass]="{online: getServerStatus() === 'online'}"
  <some-element [ngClass]="{'first': true, 'second': true, 'third': false}">...</some-element>
 
+ _____________ section 3 _____________
+
+ng g c _components/recipes --skip-tests=true
+ng g c _components/recipes/recipe-list --skip-tests=true
+ng g c _components/recipes/recipe-list/recipe-item --skip-tests=true
+ng g c _components/recipes/recipe-detail --skip-tests=true
+ng g c _components/recipes/recipe-item --skip-tests=true
+ng g c _components/shopping-list --skip-tests=true
+ng g c _components/shopping-list/shopping-edit --skip-tests=true
+
 
 

@@ -10,6 +10,15 @@ import { WarningAlertComponent } from './alerts/warning-alert/warning-alert.comp
 import { SuccessAlertComponent } from './alerts/success-alert/success-alert.component';
 import { UserComponent } from './user/user.component';
 import { Task3 } from './task3/task3.component';
+import { HeaderComponent } from './_components/header/header.component';
+import { ContentComponent } from './_components/content/content.component';
+import { FooterComponent } from './_components/footer/footer.component';
+import { RecipeDetailComponent } from './_components/recipes/recipe-detail/recipe-detail.component';
+import { ShoppingListComponent } from './_components/shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './_components/shopping-list/shopping-edit/shopping-edit.component';
+import { RecipeListComponent } from './_components/recipes/recipe-list/recipe-list.component';
+import { RecipeItemComponent } from './_components/recipes/recipe-list/recipe-item/recipe-item.component';
+import { RecipesComponent } from './_components/recipes/recipes.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +28,16 @@ import { Task3 } from './task3/task3.component';
     WarningAlertComponent,
     SuccessAlertComponent,
     UserComponent,
-    Task3
+    Task3,
+    HeaderComponent,
+    ContentComponent,
+    FooterComponent,
+    RecipeListComponent,
+    RecipeDetailComponent,
+    RecipeItemComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent,
+    RecipesComponent
   ],
   imports: [
     BrowserModule,
