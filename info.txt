@@ -49,5 +49,21 @@ from server-form to server-list
 from server-list to server-element
 display server-element in server-list
 
+@Input()
+@Outpt()
+new EventEmiter<>()
 
+encapsulation: ViewEncapsulation.None
+input reference #serverNameInput
+@ViewChild('')
+<ng-content></ng-content>  - input html elements from outside
+
+ngOnChanges() called multipule times after a bounde input property changed
+ngOnInit()  - called once the component is initialized
+ngDoCheck() called during every change detection run
+ngAfterContentInit()
+ngAfterContentChecked()
+ngAfterViewInit()
+ngAfterViewChecked()
+ngOnDestroy()
 

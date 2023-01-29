@@ -8,7 +8,7 @@ import { Server } from 'src/app/shared/server.model';
 })
 export class ServerListComponent implements OnInit {
 
-  serverElements: Server[] = [new Server('Server 1', 'Opis 1')];
+  serverElements: Server[] = [new Server('Server 1', 'Opis 1', 'server')];
 
   constructor() { }
 
